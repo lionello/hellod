@@ -5,10 +5,10 @@ stdenv.mkDerivation {
   nativeBuildInputs = [ dmd ];
   src = ./.;
   buildPhase = ''
-    dmd -of=hello hello.d
+    dmd -of=hellod hello.d
   '';
   installPhase = ''
-    mkdir -p $out
-    mv hello $out/
+    mkdir -p $out/bin
+    mv hellod $out/bin/
   '';
 }
