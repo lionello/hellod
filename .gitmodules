@@ -1,0 +1,3 @@
+[submodule "dockerize"]
+	path = dockerize
+	url = https://github.com/larsks/dockerize.git
